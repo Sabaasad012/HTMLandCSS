@@ -1,0 +1,93 @@
+:root{
+    --background-color: yellow;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+.container{
+    width:80%;
+    
+    margin : auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+   
+}
+.card{
+    width:450px;
+    height:250px;
+    background: linear-gradient(gray,white);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0,4);
+    border-radius:6px;
+    overflow:hidden;
+    position: relative;
+    margin: 10px;
+
+
+}
+
+.card .left-info{
+    float:left;
+    width:150px;
+    height:100%;
+    position:relative;
+    background:var(--background-color);
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;  
+
+}
+
+.card .left-info img{
+    height:100px;
+    width:auto;
+}
+
+.card .left-info #user-level, .card .left-info #user-points{
+border: 2px solid grey;
+color :green;
+text-transform: uppercase;
+background:rgba(0,0,0,0.25);
+
+padding: 5px 5px;
+border-radius:100px;
+font-size:11px;
+} 
+.card .right-info{
+    width:calc(100%-150px);
+    height:100%;
+    
+    
+    
+}
+.card > .right-info >header >h1{
+     text-align:center;
+}
+p#user-descritpion{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:13px;
+    padding-left:10px;
+}
+
+div.linkedin-link{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+.fa-linkedin-square{
+    font-size:36px;
+}
+.fa-linkedin-square:hover{
+    color:red;
+}
+/* .card .left-info #user-level{border: 1px solid blue;}
+
+.card > .left-info > div > #user-level{border: 1px solid red;} 
+
+ p#user-level{border: 1px solid green;} */
+

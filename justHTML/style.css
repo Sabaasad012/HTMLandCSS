@@ -1,0 +1,33 @@
+td {
+    width:600px;
+    border:1
+}
+
+.imgstyle{
+    align-items: start;
+}
+
+.formstyle{
+    align-items:end;
+}
+
+
+div section{
+    margin: 4px;
+    background-color: blue;
+    border: 1px solid green;
+    padding:20px;
+
+}
+
+.displaysection{
+    display:flex ;
+    
+}
+.imagedisplay{
+-ms-flex-align: left;
+
+}
+.formdisplay{
+    -ms-flex-align: right;
+}
